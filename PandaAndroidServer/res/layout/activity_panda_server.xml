@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PandaServerActivity" >
+
+    <TextView
+        android:id="@+id/IPAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="IPAddess: " />
+    
+    <EditText
+        android:id="@+id/Porta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity = "center_horizontal"
+        android:ems="10"
+        android:hint="PORTA DI ASCOLTO"/>
+
+    <Button
+        android:id="@+id/AvvioServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity = "center_horizontal"
+        android:onClick="AvvioServer"
+        android:text="Avvia Server" />
+    
+    <EditText
+        android:id="@+id/ToBeSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity = "center_horizontal"
+        android:ems="10"
+        android:hint="SCRIVI MESSAGGIO"/>
+    
+    <Button
+        android:id="@+id/Invia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity = "center_horizontal"
+        android:onClick="Invia"
+        android:text="Invia" />
+    
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/chatmsg"
+                android:text="Conversazione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    
+    
+
+</LinearLayout>
